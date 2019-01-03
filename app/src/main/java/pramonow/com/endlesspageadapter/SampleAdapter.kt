@@ -4,12 +4,8 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 
-/*
-    Sample adapter to be used
-    Need person and callback
- */
+
 class SampleAdapter : RecyclerView.Adapter<SampleAdapter.SampleVH>() {
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): SampleVH {

@@ -5,6 +5,10 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.util.Log
+import android.widget.Button
+import android.widget.FrameLayout
+import android.widget.LinearLayout
 
 /*
     Example on making recycler view (list)
@@ -12,22 +16,30 @@ import android.support.v7.widget.RecyclerView
  */
 class RecyclerViewActivity : AppCompatActivity() {
 
-    lateinit var recyclerView: RecyclerView
-    lateinit var sampleAdapter: SampleAdapter
+    var recyclerViewList:MutableList<RecyclerView> = ArrayList()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycler_view)
 
-        recyclerView = findViewById(R.id.list)
+        var mainLayout = findViewById<LinearLayout>(R.id.mainLayout)
 
-        val linearLayoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
-        recyclerView.layoutManager = linearLayoutManager
+        recyclerViewList.add(RecyclerView(this))
+        recyclerViewList.add(RecyclerView(this))
+        recyclerViewList.add(RecyclerView(this))
+        recyclerViewList.add(RecyclerView(this))
+        recyclerViewList.add(RecyclerView(this))
+        recyclerViewList.add(RecyclerView(this))
 
-        sampleAdapter = SampleAdapter()
+        recyclerViewList.forEach{
+            it.setLayoutParams(LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT))
+            it.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
+            it.adapter = SampleAdapter()
+            mainLayout.addView(it)
+        }
 
-        //Set callback for clicking
-        recyclerView.adapter = sampleAdapter
+
 
     }
 }
