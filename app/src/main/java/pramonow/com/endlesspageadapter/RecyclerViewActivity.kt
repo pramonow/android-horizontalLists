@@ -16,29 +16,19 @@ import android.widget.LinearLayout
  */
 class RecyclerViewActivity : AppCompatActivity() {
 
-    var recyclerViewList:MutableList<RecyclerView> = ArrayList()
-
+    lateinit var horizontalListBundler: HorizontalListBundler
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycler_view)
 
-        var mainLayout = findViewById<LinearLayout>(R.id.mainLayout)
+        horizontalListBundler = findViewById(R.id.horizontal_bundler)
 
-        recyclerViewList.add(RecyclerView(this))
-        recyclerViewList.add(RecyclerView(this))
-        recyclerViewList.add(RecyclerView(this))
-        recyclerViewList.add(RecyclerView(this))
-        recyclerViewList.add(RecyclerView(this))
-        recyclerViewList.add(RecyclerView(this))
 
-        recyclerViewList.forEach{
-            it.setLayoutParams(LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT))
-            it.layoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
-            it.adapter = SampleAdapter()
-            mainLayout.addView(it)
-        }
-
+        horizontalListBundler.addList("Layout 1", SampleAdapter())
+        horizontalListBundler.addList("Layout 1=2", SampleAdapter())
+        horizontalListBundler.addList("Layout 3", SampleAdapter())
+        horizontalListBundler.addList("Layout 4", SampleAdapter())
 
 
     }
