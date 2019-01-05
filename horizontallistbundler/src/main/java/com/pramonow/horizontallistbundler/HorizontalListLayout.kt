@@ -1,4 +1,4 @@
-package pramonow.com.endlesspageadapter
+package com.pramonow.horizontallistbundler
 
 import android.content.Context
 import android.support.v7.widget.LinearLayoutManager
@@ -17,8 +17,7 @@ class HorizontalListLayout:LinearLayout{
         init(context)
     }
 
-    private fun init(context: Context)
-    {
+    private fun init(context: Context) {
         View.inflate(context, R.layout.layout_horizontal_list,this)
 
         //INIT EVERY VIEW

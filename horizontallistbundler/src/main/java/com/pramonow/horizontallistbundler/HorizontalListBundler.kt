@@ -1,4 +1,4 @@
-package pramonow.com.endlesspageadapter
+package com.pramonow.horizontallistbundler
 
 import android.content.Context
 import android.support.v4.widget.NestedScrollView

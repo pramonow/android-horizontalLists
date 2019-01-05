@@ -9,6 +9,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.LinearLayout
+import com.pramonow.horizontallistbundler.HorizontalListBundler
 
 /*
     Example on making recycler view (list)
@@ -26,7 +27,7 @@ class RecyclerViewActivity : AppCompatActivity() {
 
 
         horizontalListBundler.addList("Layout 1", SampleAdapter())
-        horizontalListBundler.addList("Layout 1=2", SampleAdapter())
+        horizontalListBundler.addList("Layout 2", SampleAdapter())
         horizontalListBundler.addList("Layout 3", SampleAdapter())
         horizontalListBundler.addList("Layout 4", SampleAdapter())
 
