@@ -23,6 +23,8 @@ class HorizontalListLayout:LinearLayout{
         //INIT EVERY VIEW
         title = findViewById(R.id.title_text)
         recyclerView = findViewById(R.id.item_list)
+
+        //layout manager for horizontal scrolling
         recyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL,false)
     }
 }

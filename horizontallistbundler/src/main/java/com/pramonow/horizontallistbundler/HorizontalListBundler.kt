@@ -19,13 +19,13 @@ class HorizontalListBundler:NestedScrollView{
 
     private fun init(context: Context) {
         View.inflate(context, R.layout.layout_list_bundler,this)
-
-        //INIT EVERY VIEW
         listLayout = findViewById(R.id.layout_list)
     }
 
     fun addList(title:String, listAdapter:RecyclerView.Adapter<*>) {
         var horizontalLayout = HorizontalListLayout(context)
+
+        //Programmatically creating the horizontal layout view
         horizontalLayout.setLayoutParams(LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT))
         horizontalLayout.recyclerView.adapter = listAdapter
         horizontalLayout.title.text = title
@@ -34,7 +34,9 @@ class HorizontalListBundler:NestedScrollView{
         listLayout.addView(horizontalLayout)
     }
 
-    fun getHorizontalLayout(index:Int):HorizontalListLayout {
+    //Get the horizontal list for targeted position
+    //Can be used to access the title and recycler view
+    fun getHorizontalList(index:Int):HorizontalListLayout {
         return horizontalList[index]
     }
 
