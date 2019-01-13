@@ -20,5 +20,8 @@ class RecyclerViewActivity : AppCompatActivity() {
         horizontalListBundler.addList("Layout 3", SampleAdapter())
         horizontalListBundler.addList("Layout 4", SampleAdapter())
 
+        var button = horizontalListBundler.getHorizontalList(0).getBottomLeftButton()
+        button.setText("SET TEXT")
+
     }
 }
