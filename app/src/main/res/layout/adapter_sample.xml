@@ -2,14 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="wrap_content"
-    android:padding="50dp"
-    android:layout_marginRight="10dp"
+    android:padding="20dp"
+    android:layout_margin="5dp"
     android:layout_height="wrap_content"
-    android:background="@color/colorPrimary">
+    android:background="@color/adapterColor">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_foreground"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:text="NAME HERE IS NAME"/>
+        android:text="Sample Adapter"/>
 
 </LinearLayout>
