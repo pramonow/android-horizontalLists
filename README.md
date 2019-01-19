@@ -45,7 +45,7 @@ As for your activity
         
 ```
         
-As for the buttons, 3 buttons are provided (Top right, bottom left and bottom right). In default they are invisible, but if you get The botoom it will automatically be visible.
+As for the buttons, 3 buttons are provided (Top right, bottom left and bottom right). In default they are invisible, but if you get the button it will automatically be visible.
 
 ```     var buttonLeftBot = horizontalListBundler.getHorizontalList(0).getBottomLeftButton()
         buttonLeftBot.setText("Button 1")
