@@ -2,7 +2,7 @@
 
 Bundling List of horizontal recycler view in one components
 
-![alt text](https://raw.githubusercontent.com/pramonow/just_images/master/horizontalList.png)
+![alt text](https://github.com/pramonow/just_images/blob/master/horizontalList.png?raw=true)
 
 	allprojects {
 		repositories {
