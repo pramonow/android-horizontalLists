@@ -14,6 +14,12 @@ Bundling List of horizontal recycler view in one components
 Dependency
 
 	dependencies {
+	        implementation 'com.github.pramonow:android-horizontalLists:1.0'
+	}
+  
+Or you can use SNAPSHOT to keep your module up to date
+
+	dependencies {
 	        implementation 'com.github.pramonow:android-horizontalLists:-SNAPSHOT'
 	}
 
@@ -66,7 +72,7 @@ Do this in your xml
         android:id="@+id/horizontal_list"/>
 ```
 
-And in your activtiy
+And in your activity
 ```
         // Used if you only want to create one horizontal layout
         var horizontalList:HorizontalListLayout
