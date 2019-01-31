@@ -14,6 +14,7 @@ class RecyclerViewActivity : AppCompatActivity() {
 
         horizontalListBundler = findViewById(R.id.horizontal_bundler)
 
+
         horizontalListBundler.addList("Layout 1", SampleAdapter())
         horizontalListBundler.addList("Layout 2", SampleAdapter())
         horizontalListBundler.addList("Layout 3", SampleAdapter())
