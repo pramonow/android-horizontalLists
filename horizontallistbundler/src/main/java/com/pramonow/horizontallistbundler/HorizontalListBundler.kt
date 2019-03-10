@@ -40,4 +40,8 @@ class HorizontalListBundler:NestedScrollView{
         return horizontalList[index]
     }
 
+    fun getHorizontalListBundleSize():Int{
+        return horizontalList.size
+    }
+
 }
