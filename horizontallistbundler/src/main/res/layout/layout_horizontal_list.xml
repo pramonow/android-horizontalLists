@@ -8,18 +8,23 @@
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:padding="3dp"
         android:id="@+id/title_text"
-        android:text="Put title here, two liners word asd asdasdasdasdasddsadsadsdsd"
+        android:minLines="2"
+        android:maxLines="2"
+        android:text="Temukan promo terfavorit di sini dan selengkapnya "
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/button_top_right" />
+        app:layout_constraintRight_toLeftOf="@id/button_top_right"
+        />
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:id="@+id/button_top_right"
         android:visibility="invisible"
         android:text="Button 1"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:background="?attr/selectableItemBackground" />
 
