@@ -14,7 +14,7 @@ Bundling List of horizontal recycler view in one components
 Dependency
 
 	dependencies {
-	        implementation 'com.github.pramonow:android-horizontalLists:1.0'
+	        implementation 'com.github.pramonow:android-horizontalLists:1.0.1'
 	}
   
 Or you can use SNAPSHOT to keep your module up to date
