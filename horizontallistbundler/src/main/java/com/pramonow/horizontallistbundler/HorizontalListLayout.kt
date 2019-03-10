@@ -17,6 +17,10 @@ class HorizontalListLayout:LinearLayout{
     lateinit var buttonBottomLeft:Button
     lateinit var buttonBottomRight:Button
 
+    constructor(context: Context,attributeSet: AttributeSet):super(context,attributeSet){
+        init(context)
+    }
+
     constructor(context: Context) : super(context) {
         init(context)
     }
